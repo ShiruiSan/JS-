@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body>
+	<div class="box1 mx-auto">
+		<h1 class="p">Столица Японии?</h1>
+			<img src="1.jpg" style="width: 100%;">
+			<div>
+				<button class="btn1-1 p">Осака</button>
+			</div>
+			<div>
+				<button class="btn2-1 p">Йокогама</button>
+			</div>
+			<div>
+				<button class="btn3-1 p">Токио</button>
+			</div>
+	</div>
+	<div class="box2 mx-auto">
+		<h1 class="p">Самая дорогая машина в мире?</h1>
+			<img src="2.jpg" style="width: 100%;">
+			<div>
+				<button class="btn1-2 p">Rolls-Royce Sweptail</button>
+			</div>
+			<div>
+				<button class="btn2-2 p">Bugatti La Voiture Noire</button>
+			</div>
+			<div>
+				<button class="btn3-2 p">Lamborghini Aventador LP 700-4</button>
+			</div>
+	</div>
+	<div class="box3 mx-auto">
+		<h1 class="p">Самое фантастическое место в мире</h1>
+			<img src="3.jpg" style="width: 100%;">
+			<div>
+				<button class="btn1-3 p">Острова Пхи-Пхи, Таиланд</button>
+			</div>
+			<div>
+				<button class="btn2-3 p">Горы Тяньцзу, Китай</button>
+			</div>
+			<div>
+				<button class="btn3-3 p">Кратер Ньирагонго, Конго</button>
+			</div>
+	</div>
+	<div class="box4 mx-auto">
+		<!-- Ответ на 1 -->
+		<h1 style="width: 10px;">Ответы</h1>
+		<h3 class="p">Ответ на 1 вопрос</h3>
+		<img src="4.jpg" style="width: 100%">
+		<h4>Токио</h4>
+		<p class="p">То́кио (яп. 東京 То:кё: (инф.), «Восточная столица»[2][3]) — столица Японии, её административный, финансовый, промышленный и политический центр. Крупнейшая городская экономика мира[4]. Расположен в юго-восточной части острова Хонсю, на равнине Канто в бухте Токийского залива Тихого океана. Помимо столицы, Токио также является одной из сорока семи префектур страны. Площадь префектуры составляет 2188,67 км²[5], население — 13 742 906 человек (1 октября 2017)[6], плотность населения — 6279,11 чел./км².</p>
+		<!-- ответ на 2 -->
+		<h3 class="p">Ответ на 2 вопрос</h3>
+		<img src="6.jpg" style="width: 100%">
+		<h4>Bugatti La Voiture Noire</h4>
+		<p class="p">Французский автопроизводитель Bugatti представил в Женеве уникальный суперкар La Voiture Noire, построенный в единственном экземпляре. Об этом 5 марта сообщил Motor1. По данным издания, стоимость модели составляет €16,5 млн (более 1,2 млрд рублей), что делает ее самым дорогим на сегодняшний день автомобилем в мире.</p>
+		<!-- ответ на 3 -->
+		<h3 class="p">Ответ на 3 вопрос</h3>
+		<img src="5.jpg" style="width: 100%">
+		<h4>Острова Пхи-Пхи, Таиланд</h4>
+		<p class="p">Острова Пхи-Пхи находятся в Таиланде, между крупным островом Пхукет и западным побережьем Андаманского моря. Большая часть из этих островов — это не просто острые скалы, возвышающиеся из океана. Ясная бирюзовая вода и густая тропическая зелень делают это место настоящим раем на Земле.
+	</div>
+
+	<script type="text/javascript">
+		//1 Вопрос
+		document.querySelector('.btn3-1').onclick = function(){
+			alert('Правильно');
+			document.querySelector('.box1').style.display = 'none';
+			document.querySelector('.box2').style.display = 'block';
+		}
+		document.querySelector('.btn1-1').onclick = function(){
+			alert('Не правильно');
+		}
+		document.querySelector('.btn2-1').onclick = function(){
+			alert('Не правильно');
+		}
+		//2 Вопрос
+		document.querySelector('.btn2-2').onclick = function(){
+			alert('Правильно');
+			document.querySelector('.box2').style.display = 'none';
+			document.querySelector('.box3').style.display = 'block';
+		}
+		document.querySelector('.btn1-2').onclick = function(){
+			alert('Не правильно');
+		}
+		document.querySelector('.btn3-2').onclick = function(){
+			alert('Не правильно');
+		}
+		//3 Вопрос
+		document.querySelector('.btn1-3').onclick = function(){
+			alert('Правильно');
+			document.querySelector('.box3').style.display = 'none';
+			document.querySelector('.box4').style.display = 'block';
+		}
+		document.querySelector('.btn2-3').onclick = function(){
+			alert('Не правильно');
+		}
+		document.querySelector('.btn3-3').onclick = function(){
+			alert('Не правильно');
+		}
+	</script>
+</body>
+</html>
